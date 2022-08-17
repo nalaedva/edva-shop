@@ -27,10 +27,10 @@ function Header() {
           <Nav
             className="me-auto my-2 my-lg-0"
           >
-            <Nav.Link href="#action1" >Inicio</Nav.Link>
-            <Nav.Link href="#action2" >Productos</Nav.Link>
-            <Nav.Link href="#action3" >Contacto</Nav.Link>
-            <Nav.Link href="#action4" >Novedades</Nav.Link>
+            <Nav.Link href="#action1" className="fw-light">Inicio</Nav.Link>
+            <Nav.Link href="#action2" className="fw-light">Productos</Nav.Link>
+            <Nav.Link href="#action3" className="fw-light">Contacto</Nav.Link>
+            <Nav.Link href="#action4" className="fw-light">Novedades</Nav.Link>
             
           </Nav>
           <Form className="d-flex">
