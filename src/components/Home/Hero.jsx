@@ -7,7 +7,7 @@ function Hero() {
     return (
         <>
             <h1>Welcome to my shop</h1>
-            <p>EDVA services</p>
+            <p>Pagina en construccion</p>
             <button onClick={start}>Start</button>
         </>
     )
