@@ -1,25 +1,26 @@
-import edvalogo from "../../assets/logo.png";
+import mercaplastLogo from "../../../assets/logo.png";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { ImCart } from "react-icons/im";
 import { ImUser} from "react-icons/im";
+
+import CartWidget from "../CartWidget/CartWidget";
 
 import './Header.css';
 
-function Header() {
+function Header({action}) {
     return(
-      
-      <Navbar collapseOnSelect expand="sm"  fixed="top" bg="dark" variant="dark" className="justify-content-between">
+      <>
+      <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" className="justify-content-between">
 
         
       <Container fluid>
         
         <Navbar.Brand href="#">
         
-        <img src={edvalogo} alt="logo" />
+        <img src={mercaplastLogo} alt="Mercaplast Logo" />
 
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,22 +51,15 @@ function Header() {
               />
             </a>
 
-            <Button className="btnBasket" variant="outline-dark">
-            
-              <ImCart
-
-                // className="icon"
-                    size="20px"
-                    color="white"
-              />
+            <CartWidget action={action}/>
 
 
             
-              </Button>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </>
     )
 }
 

@@ -1,0 +1,11 @@
+.cardWidget {
+    margin-top: 7px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+  }
+  
+  .cardWidget svg {
+    color: var(--blanco);
+    font-size: 20px;
+  }
