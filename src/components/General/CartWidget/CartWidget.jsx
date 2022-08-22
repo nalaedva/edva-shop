@@ -1,14 +1,9 @@
 import './CartWidget.css'
-import { ImCart } from "react-icons/im";
 
-const CartWidget = ({action}) => {
+
+const CartWidget = () => {
     return (
-        <div className="cardWidget">
-             <ImCart
-                // size="20px"
-                // color="white"
-            />
-        </div>
+        <h5>Widget</h5>
     )
 }
 

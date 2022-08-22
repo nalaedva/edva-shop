@@ -1,7 +1,7 @@
 import './reset.css';
 
 import Header from './components/General/Navbar/Header';
-import ItemListContainer from './components/General/ItemListContainer/ItemListContainer';
+import FeaturedProduct from './components/Home/FeaturedProduct'
 
 
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <ItemListContainer />
+    <FeaturedProduct />
     </>
   );
 }

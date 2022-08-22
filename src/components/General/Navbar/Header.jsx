@@ -1,14 +1,15 @@
 import mercaplastLogo from "../../../assets/logo.png";
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { ImUser} from "react-icons/im";
 
+
 import CartWidget from "../CartWidget/CartWidget";
 
 import './Header.css';
+import NavCart from "../NavCart/NavCart";
 
 function Header({action}) {
     return(
@@ -51,8 +52,7 @@ function Header({action}) {
               />
             </a>
 
-            <CartWidget action={action}/>
-
+           <NavCart />
 
             
           </Form>
